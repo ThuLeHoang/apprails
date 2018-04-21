@@ -13,7 +13,87 @@
  *= require_tree .
  *= require_self
  */
-body { padding-top: 100px; }
-footer { margin-top: 100px; }
-table, td, th { vertical-align: middle; border: none; }
-th { border-bottom: 1px solid #DDD; }
+body { 
+    padding-top: 100px; 
+    background-color: #DDD;
+}
+footer {
+    margin-top: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+}
+table, td, th { 
+    vertical-align: middle; 
+    border: none; 
+}
+th { 
+    border-bottom: 1px solid #DDD; 
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.form {
+    padding: 20px 20px;
+}
+footer {
+    background-color: #3F3B3B;
+    padding: 30px 0;
+    color: #ffffff;
+  }
+  
+.btn-success {
+    background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%) !important;
+    background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%) !important;
+    background-repeat: repeat-x !important;
+    border-color: #3e8f3e !important;
+  }
+
+.avatar {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.each_img {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    margin: 5px 5px;
+    width: 32%;
+    height: 250px;
+
+}
+
+.control-panel {
+    text-align: left;
+}
+
+.non-decoration {
+    text-decoration: none;
+}
+
+.form-horizontal {
+    padding: 10px 10px;
+}
+
+.section-vision {
+    position: relative;
+    background: url(images/bg/bg_vision.jpg);
+    background-size: cover;
+    padding: 100px 0 270px;
+    text-align: center;
+}   
+
+.anchor-wrapper {
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}

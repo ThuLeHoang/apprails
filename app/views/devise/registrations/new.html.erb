@@ -1,0 +1,50 @@
+<h2 class="center">Sign up</h2>
+
+<div class="col-sm-6 col-sm-offset-3">
+<div class="panel panel-default form">
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="row form-group">
+    <div class="col-sm-3 left">
+      <%= f.label :email %>
+    </div>
+    <div class="col-sm-9">
+      <%= f.email_field :email, autofocus: true, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <div class="col-sm-3 left">
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %>
+    </div>
+    <div class="col-sm-9">
+      <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <div class="col-sm-3 left">
+      <%= f.label :password_confirmation %>
+    </div>
+    <div class="col-sm-9">
+      <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+    </div>
+  </div>
+
+
+  <div class="form form-group">
+  <div class="actions center">
+    <%= f.submit "Sign up", class: "btn btn-success" %>
+    <%= render "devise/shared/links"%>
+  </div>
+  </div>
+<% end %>
+
+
+</div>
+</div>
